@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Registration Form</title> 
+	<style>
+        /* style.css */
+       
+         
+body { 
+	 
+	flex-direction: column; 
+	margin: 0; 
+    background-image: url(https://www.shutterstock.com/image-illustration/digital-red-blood-cells-abstract-260nw-532445632.jpg);
+	background-size: cover;
+} 
+
+.main { 
+	background-color: white; 
+	border-radius: 15px; 
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+	padding: 10px 20px; 
+	transition: transform 0.2s; 
+	width: 500px; 
+	text-align: center;
+	backdrop-filter: blur(5px); 
+	background: transparent;
+
+} 
+
+h1 { 
+	color: red; 
+} 
+
+label { 
+	display: block; 
+	width: 100%; 
+	margin-top: 10px; 
+	margin-bottom: 5px; 
+	text-align: left; 
+	color:black; 
+	font-weight: bold; 
+} 
+
+#pass { 
+	color: red; 
+	font-size: 12px; 
+} 
+
+input { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border: 1px solid #ddd; 
+	border-radius: 5px; 
+} 
+
+select { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border: 1px solid #ddd; 
+	border-radius: 5px; 
+} 
+
+button { 
+	padding: 15px; 
+	border-radius: 10px; 
+	margin-top: 15px; 
+	margin-bottom: 15px; 
+	border: none; 
+	color: white; 
+	cursor: pointer; 
+	background-color: #4CAF50; 
+	width: 100%; 
+	font-size: 16px; 
+} 
+
+.wrap { 
+	display: flex;
+	background-color : gold; 
+	justify-content: center; 
+	align-items: center; 
+	color: black;
+	font-size: large;
+	cursor: pointer;
+}
+
+    </style> 
+</head> 
+
+<body> <br><br><br>
+   <center>
+	<div class="main"> 
+		<h1>Donor Registration</h1> 
+		<form action="Don"method="post"> 
+			<label for="first">Donor Name</label> 
+			<input type="text" id="first"
+				name="name"
+				placeholder="Enter your name" required> 
+            <label for="bloodGroup">Select your blood group:</label>
+                <select id="bloodGroup" name="bloodgroup">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+
+			<label for="email">Email:</label> 
+			<input type="email" id="email"
+				name="email"
+				placeholder="Enter your email" required> 
+
+
+			<label for="mobile">Contact:</label> 
+			<input type="text" id="mobile"
+				name="mobile"
+				placeholder="Enter your Mobile Number" required 
+				maxlength="10"> 
+			<label for="selectLocation">Select your location:</label>
+            <select id="location" name="location" required>
+                <option value="" disabled selected>Please select a location</option>
+				<option value="Meerpet">Meerpet</option>
+                <option value="Ameerpet">Ameerpet</option>
+                <option value="Sanathnagar">Sanathnagar</option>
+                <option value="Khairatabad">Khairatabad</option>
+                <option value="Musheerabad">Musheerabad</option>
+				<option value="Amberpet">Amberpet</option>
+				<option value="Nampally">Nampally</option>
+				<option value="Secunderabad">Secunderabad</option>
+				<option value="Gachibowli">Gachibowli</option>
+				<option value="HITEC City">HITEC City</option>
+				<option value="Jubilee Hills">Jubilee Hills</option>
+				<option value="Serilingampally">Serilingampally</option>
+				<option value="Kukatpally">Kukatpally</option>
+				<option value="Patancheru">Patancheru</option>
+				<option value="Afzal Gunj">Afzal Gunj</option>
+				<option value="Balanagar">Balanagar</option>
+				<option value="Qutbullapur">Qutbullapur</option>
+				<option value="Medchal">Medchal</option>
+				<option value="Uppal">Uppal</option>
+				<option value="Ghatkesar">Ghatkesar</option>
+				<option value="Dilsukhnagar">Dilsukhnagar</option>
+				<option value="LB Nagar">LB Nagar</option>
+				<option value="Saroornagar">Saroornagar</option>
+				<option value="Hayathnagar">Hayathnagar</option>
+				<option value="Mehdipatnam">Mehdipatnam</option>
+				<option value="Rajendranagar">Rajendranagar</option>
+				<option value="Shamshabad">Shamshabad</option>
+				<option value="Attapur">Attapur</option>
+                <!-- Add more locations as needed -->
+            </select>	
+
+			<label for="gender">Gender:</label> 
+			<select id="gender" name="gender" required> 
+				<option value="male">Male</option> 
+				<option value="female">Female</option> 
+				<option value="other">Other</option> 
+			</select> 
+			<br><br>
+
+			
+				<input type="submit"value="register"class="wrap"> 
+				<br>
+				<div class="account">already donated ? <a href="deactivate.jsp">to delete</a></div>
+				
+			 
+		</form> 
+	</div> 
+	<script src="script.js"></script> 
+	</center>
+</body> 
+
+</html>

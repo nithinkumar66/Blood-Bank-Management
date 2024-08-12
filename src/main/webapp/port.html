@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title>red blood</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            
+            background-image: url(https://i.pinimg.com/originals/ee/5e/c6/ee5ec655ab4c63e096ab38eee4fa0418.jpg);
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+            font-size: 60px;
+            color: red;
+        }
+        .page{
+            
+            border: 10px solid transparent;
+            padding: 10px;
+            width: 300px;
+            height: 170px;
+            text-align: justify;
+            color: black;
+            font-family: Pristina;
+            font-size: 25px;
+        }
+        
+         .navbar{
+            width:85%;
+            margin:auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+        .logo{
+            width: 60px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin:0 20px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after{
+            content: "";
+            height: 3px;
+            width: 0%;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+        }
+        .navbar ul li:hover::after{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        
+        <div class="navbar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_im6HqBTnUY5lSDO3zEYCaEyMTeMsGcZeFjq0_7AZsOyjlWpggkq3wp56RWoPhe2tbck&usqp=CAU"class="logo">
+            <ul>
+                <li><a href="port.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="Help.html">Help</a></li>
+                <li><a href="login.jsp">Log out</a></li>
+                
+            </ul>
+        </div>
+
+    </div>
+    <h1>Red Prime-"Be a Hero,Be a Donor"</h1><br><br><br><br><br>
+    <div class="page">Every drop counts!Donating blood is a simple yet powerful act that can save lives.join us in the noble cause of ensuring a steady supply of blood for those in need.</div>
+</body>

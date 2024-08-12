@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <title>red blood</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-love-charity-event-donation-poster-background-template-image_151597.jpg);
+            background-size: cover;
+        
+	        align-items: center; 
+	        justify-content: center; 
+	         flex-direction: column; 
+	        margin: 0; 
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            color: red;
+        }
+        .page{
+            
+            border: 10px solid transparent;
+            padding: 10px;
+            width: 300px;
+            height: 170px;
+            text-align: justify;
+            color: black;
+            font-family: Pristina;
+            font-size: 25px;
+        }
+        
+         .navbar{
+            width:85%;
+            margin:auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+        .logo{
+            width: 60px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin:0 20px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after{
+            content: "";
+            height: 3px;
+            width: 0%;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+        }
+        .navbar ul li:hover::after{
+            width:100%;
+        }
+        .main { 
+            background-color: #fff; 
+            border-radius: 15px; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+            padding: 10px 20px; 
+            transition: transform 0.2s; 
+            width: 500px; 
+            text-align: center; 
+            background: transparent;
+            backdrop-filter:blur(5px);
+        }
+        label { 
+            display: block; 
+            width: 100%; 
+            margin-top: 10px; 
+            margin-bottom: 5px; 
+            text-align: left; 
+            color: #555; 
+            font-weight: bold; 
+        } 
+        
+        #pass { 
+            color: red; 
+            font-size: 12px; 
+        } 
+        
+        input { 
+            display: block; 
+            width: 100%; 
+            margin-bottom: 15px; 
+            padding: 10px; 
+            box-sizing: border-box; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+        } 
+        
+        select { 
+            display: block; 
+            width: 100%; 
+            margin-bottom: 15px; 
+            padding: 10px; 
+            box-sizing: border-box; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+        } 
+        
+        button { 
+            padding: 15px; 
+            border-radius: 10px; 
+            margin-top: 15px; 
+            margin-bottom: 15px; 
+            border: none; 
+            color: white; 
+            cursor: pointer; 
+            background-color: #4CAF50; 
+            width: 100%; 
+            font-size: 16px; 
+        } 
+        
+        .wrap { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+        .contact-form textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="banner">
+        
+        <div class="navbar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_im6HqBTnUY5lSDO3zEYCaEyMTeMsGcZeFjq0_7AZsOyjlWpggkq3wp56RWoPhe2tbck&usqp=CAU"class="logo">
+            <ul>
+                <li><a href="port.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="Help.html">Help</a></li>
+                <li><a href="login.jsp">Log out</a></li>
+                
+            </ul>
+        </div>
+
+    </div>
+    <center>
+    <div class="main"> 
+		<h1>Contact Our Team</h1> 
+		<form action=""> 
+			<label for="first"> Name</label> 
+			<input type="text" id="first"
+				name="first"
+				placeholder="Enter your name" required> 
+            
+
+			<label for="mobile">Contact:</label> 
+			<input type="text" id="mobile"
+				name="mobile"
+				placeholder="Enter your Mobile Number" required 
+				maxlength="10"> 
+         <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+     
+			<div class="wrap"> 
+				<button type="submit" onclick="solve()"> 
+				Submit 
+				</button> 
+			</div> 
+		</form> 
+	</div> 
+    </center>
+   
+</body>
